@@ -4,7 +4,7 @@
   "authors": [
     "Teradata"
   ],
-  "description": "",
+  "description": "A project to help facilitate UI engineer candidate testing",
   "license": "Copyright 2015 Teradata",
   "homepage": "http://teradata.com/",
   "private": true,

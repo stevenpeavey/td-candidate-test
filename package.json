@@ -2,7 +2,7 @@
   "name": "td-candidate-test",
   "version": "0.0.0",
   "private": true,
-  "description": "",
+  "description": "A project to help facilitate UI engineer candidate testing.",
   "main": "Gruntfile.js",
   "scripts": {
     "start": "grunt serve",
