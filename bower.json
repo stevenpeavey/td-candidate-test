@@ -1,0 +1,25 @@
+{
+  "name": "td-candidate-test",
+  "version": "0.0.0",
+  "authors": [
+    "Teradata"
+  ],
+  "description": "",
+  "license": "Copyright 2015 Teradata",
+  "homepage": "http://teradata.com/",
+  "private": true,
+  "devDependencies": {},
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.4"
+  },
+  "ignore": [
+    "node_modules",
+    "src",
+    "Gruntfile.js",
+    "package.json",
+    ".jscs",
+    ".jshintrc",
+    ".bowerrc"
+  ]
+}
