@@ -64,7 +64,7 @@ Run the app from your localhost ([the page](http://localhost:4000/src/) should o
 
 - Look for any script errors by opening your browser's developer tools with this project running and opening its console.
 - Mind your whitespace! Ensure you're not introducing mixed whitespace (this project uses tabs, except for `package.json` and `bower.json`). Ensure you're not leaving extraneous whitespace at the end of your lines. These things are enforced by the testing script.
-- If you're still stumped, [create an issue](https://github.com/djmccormick/td-candidate-test/issues) under this project.
+- If you're still stumped, [create an issue](https://github.com/djmccormick/td-candidate-test/issues) under this project and describe to your best ability the problems you're seeing.
 
 
 Copyright 2015 Teradata
