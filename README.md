@@ -13,7 +13,7 @@ A project to help facilitate UI engineer candidate testing.
 
 ### Installation
 
-1. [Fork this repository](https://github.com/your-username/td-candidate-test/fork) to your own account.
+1. [Fork this repository](https://github.com/djmccormick/td-candidate-test/fork) to your own account.
 2. Ensure you've installed the following utilities:
     - [Git](http://git-scm.com/downloads): a free and open source distributed version control system.
     - [Node.js](http://nodejs.org/download/): a software platform that is used to build server-side applications.
