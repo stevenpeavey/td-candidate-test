@@ -17,10 +17,10 @@ A project to help facilitate UI engineer candidate testing.
 2. Ensure you've installed the following utilities:
     - [Git](http://git-scm.com/downloads): a free and open source distributed version control system.
     - [Node.js](http://nodejs.org/download/): a software platform that is used to build server-side applications.
-    - [Grunt](http://gruntjs.com/getting-started): a JavaScript task runner.
+    - [Grunt](http://gruntjs.com/getting-started): a JavaScript task runner. If you have access issues, type `sudo` before the following command:
 
             $ npm install -g grunt-cli
-    - [Bower](http://bower.io/#installing-bower): a package manager for the web.
+    - [Bower](http://bower.io/#installing-bower): a package manager for the web. If you have access issues, type `sudo` before the following command:
 
             $ npm install -g bower
 3. Ensure you have [set up public SSH key authentication with GitHub](https://help.github.com/articles/generating-ssh-keys/).
