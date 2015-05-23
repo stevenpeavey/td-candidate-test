@@ -1,6 +1,106 @@
-@import "libraries/bootstrap/less/variables.less";
-@import "libraries/bootstrap/less/mixins.less";
+@import "./libraries/bootstrap/less/variables.less";
+@import "./libraries/bootstrap/less/mixins.less";
 
-body {
-	padding-top: 50px;
+html,body
+{
+  height: 100%;
 }
+body {
+	// padding-top: 50px;
+	font-size:14px;
+	font-family:helvetica,arial,sans-serif;
+	font-weight:lighter;
+}
+h1{
+	font-size:20px;
+}
+a{
+	color:#005b9b;
+}
+
+.container-fluid.max-height{
+	height:100%;
+	padding-left:0px;
+	padding-right:0px;
+	display:table;
+}
+.container-fluid.max-height > .row{
+	display:table-cell;
+}
+
+.side-nav{
+	padding-top:60px;
+	display:table;
+	height:100%;
+}
+
+.user-name{
+	color:#fff;
+	cursor:pointer;
+	padding:0 0 20px;
+}
+.border-bottom-grey{
+	border-bottom:1px solid #4e4e4e;
+}
+
+.new-email{
+	display:block;
+	color:#e88a00;
+}
+.new-email:hover{
+	color:#ff9a07;
+	text-decoration:none;
+}
+
+.inbox{
+	padding:60px 0 0;
+}
+.inbox-message{
+	border:1px solid #4e4e4e;
+}
+.inbox-message-name{
+	font-size:18px;
+}
+.inbox-message-message{
+	margin:10px 0 0;
+	padding:0 0 10px;
+	border-bottom:1px solid #d4d4d4;
+}
+.inbox-call-to-actions{
+	margin:10px 0 0;
+}
+
+.black-bg{
+	background-color:#313033;
+}
+
+//responsive styling
+@media screen and (max-width:767px){
+	.side-nav{
+		padding-top:10px;
+		height:auto;
+		.badge{
+			margin:0 5px;
+		}
+	}
+	.user-name{
+		padding:0 0 10px;
+	}
+	.list-group,.list-group-item{
+		display:inline-block;
+		margin-bottom:0px;
+		border-bottom:none;
+	}
+	.list-group-item{
+		padding:10px 5px;
+	}
+	.new-email{
+		left: 184px;
+    position: absolute;
+    top: 11px;
+	}
+	.inbox{
+		padding:10px 0 0;
+	}
+}
+

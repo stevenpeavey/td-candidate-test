@@ -2,9 +2,10 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>td-candidate-test</title>
+		<title>td-candidate-test | Steven Peavey</title>
 
 		<!-- Library styles -->
 		<link rel="stylesheet" href="libraries/bootstrap/dist/css/bootstrap.css"/>
@@ -15,13 +16,102 @@
 		<!-- endbuild -->
 	</head>
 	<body role="document">
-		<div class="container">
-			<div class="starter-template" style="padding: 40px 15px; text-align: center;">
-				<h1>Starter Template</h1>
-				<p class="lead">Replace this <code>.starter-template</code> div with your new custom component.</p>
+		
+			
+		<div class="container-fluid max-height">
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-3 col-md-3 side-nav black-bg">
+					<div class="dropdown">				    
+				    <div class="user-name border-bottom-grey dropdown-toggle" id="user-options" data-toggle="dropdown" aria-expanded="true">
+				    	Michael Holmes <span class="caret"></span>
+				    </div>
+					  <ul class="dropdown-menu" role="menu" aria-labelledby="user-options">
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Settings</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">More Settings</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Logout</a></li>
+					  </ul>
+					</div>
+					<div class="list-group border-bottom-grey">
+					  <a href="#" class="list-group-item active">Inbox <span class="badge">42</span></a>
+					  <a href="#" class="list-group-item">Sent</a>
+					  <a href="#" class="list-group-item">Flagged</a>
+					  <a href="#" class="list-group-item">Deleted</a>
+					</div>
+					<a href="#" class="new-email"><span class="glyphicon glyphicon-pencil"></span> New Email</a>
+				</div>
+
+
+				<div class="col-xs-12 col-sm-9 col-md-7">					
+					<div class="inbox">
+						<ol class="breadcrumb">
+						  <li><a href="#">Inbox</a></li>
+						  <li class="active">Hello!</li>
+						</ol>
+
+						<div class="row message">
+							<div class="col-xs-2 col-sm-1 text-center">
+								<img src="danielle-carter.jpg" class="img-circle inbox-message-avatar" width="40" />
+							</div>
+							<div class="col-xs-9 col-sm-11">
+								<div class="inbox-message-date pull-right">09/18/2015 <br /> <span class="inbox-category">Internal</span></div>
+								<div class="inbox-message-name">Danielle Carter</div>
+								<div class="inbox-message-email"><a href="mailto:danielle.carter@email.com">danielle.carter@email.com</a></div>		
+								<div class="inbox-message-message border-bottom-grey">
+									<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo.</p>
+								</div>
+								<div class="inbox-call-to-actions">
+									<button class="btn btn-default inbox-message-reply disabled pull-right"><span class="glyphicon glyphicon-share-alt"></span>  Reply</button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row message-send hidden">
+							<div class="col-xs-2 col-sm-1 text-center">
+								<img src="avatar.jpg" class="img-circle inbox-message-send-avatar" width="40" />
+							</div>
+							<div class="col-xs-9 col-sm-11">
+								<form action="#">
+									<div class="form-grop">
+										<textarea class="form-control" rows="3"></textarea>
+									</div>
+								</form>
+								<div class="inbox-call-to-actions">
+									<button class="btn btn-primary inbox-message-send-reply pull-right" data-toggle="modal" data-target="#myModal">
+										<span class="glyphicon glyphicon-share-alt"></span>  Send
+									</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
 			</div>
 		</div>
 
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h4 class="modal-title text-center" id="myModalLabel">Sending Message...</h4>
+		      </div>
+		      <div class="modal-body">
+
+		        <div class="progress">
+				      <div style="width: 0%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" role="progressbar" class="progress-bar progress-bar-success send-message-progress"></div>
+				    </div>
+						
+						<div class="message-send-success text-center hide">
+							<h2><span class="glyphicon glyphicon-ok text-success"></span> Message Sent</h2>
+							<p>Some details. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla consectetur.</p>
+							<button data-dismiss="modal" class="btn btn-default close-message" type="button">Close</button>
+						</div>
+
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
 		<!-- Library scripts -->
 		<script src="libraries/jquery/dist/jquery.js"></script>
